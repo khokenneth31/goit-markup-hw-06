@@ -689,7 +689,7 @@ nav {
 }
 .modal-close:hover {
   background-color: var(--ocean);
-  color: var(--cornflower);
+  fill: var(--cornflower);
 }
 .close-icon:hover,
 .close-icon:focus {
@@ -764,7 +764,8 @@ nav {
   border-radius: 4px;
   cursor: auto;
 }
-.user-contact input:focus + svg {
+.user-contact input:focus + svg,
+.user-contact input:hover + svg {
   color: var(--iris);
 }
 .user-contact-field-icon {
