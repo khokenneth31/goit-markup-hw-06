@@ -764,8 +764,8 @@ nav {
   border-radius: 4px;
   cursor: auto;
 }
-.user-contact input:focus + svg,
-.user-contact input:hover + svg {
+.user-contact input:focus + .form-icon,
+.user-contact input:hover + .form-icon {
   color: var(--iris);
 }
 .user-contact-field-icon {
