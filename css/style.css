@@ -764,12 +764,12 @@ nav {
   border-radius: 4px;
   cursor: auto;
 }
-.user-contact input:focus + .form-icon,
-.user-contact input:hover + .form-icon {
-  color: var(--iris);
+.user-contact input:focus + svg,
+.user-contact input:hover + svg {
+  fill: var(--iris);
 }
 .user-contact-field-icon {
-  color: var(--navyblue);
+  fill: var(--navyblue);
   position: absolute;
   margin-left: 16px;
   transform: translateY(-150%);
