@@ -24,7 +24,9 @@
 a {
   text-decoration: none;
 }
-button {
+button,
+input,
+textarea {
   font-family: inherit;
   cursor: pointer;
   border: unset;
@@ -715,12 +717,23 @@ nav {
 .form-header {
   color: var(--navyblue);
   text-align: center;
-  /* font-weight: 500; */
-  margin-bottom: 34px;
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+.user-contact-label {
+  color: var(--lightslate);
+  /* Small Text */
+  font-size: 12px;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.48px;
+  text-transform: capitalize;
 }
 .user-contact input,
 .user-contact textarea {
   display: block;
+  border: 1px solid var(--lightslate);
+  border-radius: 4px;
   margin-top: 4px;
   width: 360px;
   padding-bottom: 11px;
@@ -735,39 +748,30 @@ nav {
   resize: none;
   height: 100px;
   border-radius: 4px;
-  padding: 0 17px;
+  padding: 8px 17px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
 }
 .form-agree-box_link {
   text-decoration: underline;
+  color: var(--iris);
 }
 
+.user-contact input:focus,
+.user-contact input:hover,
 .user-contact textarea:hover,
 .user-contact textarea:focus {
   border-color: var(--iris);
   border-radius: 4px;
-} /*
-.icon-clients {
-  display: block;
-  width: 168px;
-  height: 88px;
-  fill: currentColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: auto;
 }
-
-
-.icon-clients-item:hover {
-  border-color: var(--ocean);
-}*/
-.user-contact input:focus,
-.user-contact input:hover {
-  border-color: var(--iris);
-  border-radius: 4px;
+.user-contact input:focus + svg {
+  color: var(--iris);
 }
-.user-contact svg.user-contact-field-icon:focus,
-.user-contact svg.user-contact-field-icon:hover {
-  fill: var(--iris);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.user-contact-field-icon {
+  color: var(--navyblue);
+  position: absolute;
+  margin-left: 16px;
+  transform: translateY(-150%);
 }
 .form-button {
   font-size: 16px;
@@ -789,6 +793,7 @@ nav {
   background-color: var(--ocean);
 }
 label.user-contact-checkbox {
+  color: var(--lightslate);
   display: flex;
 }
 .form-button-container {
@@ -798,6 +803,7 @@ label.user-contact-checkbox {
   width: 100%;
 }
 .user-contact-checkbox {
+  padding-top: 16px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -815,10 +821,29 @@ label.user-contact-checkbox {
   color: var(--iris);
   margin-left: 3px;
 }
-svg.user-contact-field-icon {
-  width: 18px;
-  height: 18px;
-  margin-left: 16px;
-  transform: translateY(-150%);
+.checkbox-icon {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--lightslate);
+  border-radius: 2px;
+  padding: 1px;
+  fill: currentColor;
+  background-color: var(--white);
+}
+.visually-hidden {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  border: 0;
+  padding: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+.checkbox-input:checked + .checkbox-icon {
+  background-color: var(--ocean);
+  border-color: var(--ocean);
 }
 /* modal window form*/

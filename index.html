@@ -343,39 +343,42 @@
     </section>
   </footer>
   <!--Modal-->
+
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal-close" data-modal-close>
-        <svg class="close-icon" width="16px" height="16px">
+        <svg width="16px" height="16px">
           <use href="img/icons/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <h2 class="form-header">Leave your contacts and we will call you back</h2>
+
       <form class="user-contact">
-        <h2 class="form-header">Leave your contacts and we will call you back</h2>
+
         <label class="user-contact-field">
-          <span class="user-contact-label">
-            name</span>
+          <span class="user-contact-label">name</span>
           <input class="user-input" type="text" name="full_name" required>
-          <svg class="user-contact-field-icon">
-            <use href="img/icons/icons.svg#formname"></use>
+          <svg class="user-contact-field-icon" width="18" height="18">
+            <use class="form-icon" href="img/icons/icons.svg#formname"></use>
           </svg>
         </label>
+
         <label class="user-contact-field">
-          <span class="user-contact-label">
-            Telephone</span>
+          <span class="user-contact-label">Telephone</span>
           <input class="user-input" type="tel" name="phone" required>
-          <svg class="user-contact-field-icon">
-            <use href="img/icons/icons.svg#formcontact"></use>
+          <svg class="user-contact-field-icon" width="18" height="18">
+            <use class="form-icon" href="img/icons/icons.svg#formcontact"></use>
           </svg>
         </label>
+
         <label class="user-contact-field">
-          <span class="user-contact-label">
-            Email</span>
+          <span class="user-contact-label">Email</span>
           <input class="user-input" type="email" name="email" required>
-          <svg class="user-contact-field-icon">
-            <use href="img/icons/icons.svg#formmail"></use>
+          <svg class="user-contact-field-icon" width="18" height="18">
+            <use class="form-icon" href="img/icons/icons.svg#formmail"></use>
           </svg>
         </label>
+
         <label class="user-contact-comment">
           <span class="user-contact-label">
             Comments</span>
@@ -383,9 +386,14 @@
         </label>
 
         <label class="user-contact-checkbox ">
-          <input type="checkbox" name="agree">
-          I accept the terms and conditions of the<a href="#" class="form-agree-box_link">Privacy Policy</a>
+          <input type="checkbox" name="agree" class="checkbox-input visually-hidden">
+          <svg class="checkbox-icon">
+            <use href="img/icons/icons.svg#icon-check"></use>
+          </svg>
+          <p class="checkbox-text">I accept the terms and conditions of the<a href="#"
+              class="form-agree-box_link">Privacy Policy</a></p>
         </label>
+
         <div class="form-button-container">
           <button type="submit" class="form-button">Send</button>
         </div>
