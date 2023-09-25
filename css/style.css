@@ -721,6 +721,7 @@ nav {
   font-size: 16px;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
+  font-weight: 500;
 }
 .user-contact-label {
   color: var(--lightslate);
