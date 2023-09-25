@@ -678,6 +678,7 @@ nav {
   color: var(--navyblue);
   border-radius: 50%;
   background-color: var(--cornflower);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition-property: background-color, border-color, color;
@@ -691,6 +692,7 @@ nav {
 .modal-close:hover {
   background-color: var(--ocean);
   fill: var(--cornflower);
+  border: 1px solid var(--ocean);
 }
 .close-icon:hover,
 .close-icon:focus {
