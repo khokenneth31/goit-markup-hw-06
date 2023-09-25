@@ -848,4 +848,10 @@ label.user-contact-checkbox {
   background-color: var(--ocean);
   border-color: var(--ocean);
 }
+.checkbox-text{
+  color: var(--lightslate);
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+}
 /* modal window form*/
